@@ -17,14 +17,28 @@ data = {
 # Создание DataFrame
 df = pd.DataFrame(data)
 
-# Линейный график для отображения изменений ожидаемой продолжительности жизни по странам
-fig = px.line(df[df['country'].isin(['United States', 'China', 'India'])],
-              x='year', y='lifeExp', color='country',
-              title='Изменение ожидаемой продолжительности жизни по странам')
+# Линейный график
+fig_line = px.line(df[df['country'].isin(['United States', 'China', 'India'])],
+                   x='year', y='lifeExp', color='country',
+                   title='Изменение ожидаемой продолжительности жизни по странам')
+fig_line.write_html("line_plot.html")
 
-# Обновление макета графика
-fig.update_layout(xaxis_title='Год', yaxis_title='Ожидаемая продолжительность жизни')
+# Гистограмма
+fig_bar = px.bar(df[df['country'].isin(['United States', 'China', 'India'])],
+                 x='country', y='lifeExp',
+                 title='Ожидаемая продолжительность жизни по странам',
+                 color='country')
+fig_bar.write_html("bar_plot.html")
 
-# Отображение графика
-# Сохранение графика как HTML файл
-fig.write_html("life_expectancy_plot.html")
+# Диаграмма рассеяния
+fig_scatter = px.scatter(df,
+                         x='year', y='lifeExp',
+                         color='country',
+                         title='Диаграмма рассеяния: Год vs Ожидаемая продолжительность жизни')
+fig_scatter.write_html("scatter_plot.html")
+
+# Круговая диаграмма
+fig_pie = px.pie(df.groupby('country')['lifeExp'].mean().reset_index(),
+                 values='lifeExp', names='country',
+                 title='Средняя ожидаемая продолжительность жизни по странам')
+fig_pie.write_html("pie_chart.html")
