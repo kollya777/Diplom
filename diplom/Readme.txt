@@ -59,17 +59,26 @@ Plotly	Библиотека для создания интерактивных �
 - Потребность в интернет-соединении для некоторых функций
 
 
-
 Примеры графиков (скриншоты)
 Matplotlib:
- 
- 
- 
+![image](https://github.com/user-attachments/assets/9db38e0d-5e49-490f-8899-375629f6a1a2)
+
+![image](https://github.com/user-attachments/assets/a1ad8403-5598-4c89-b85b-9d40ee024c9d)
+
+![image](https://github.com/user-attachments/assets/185fb5bc-9b40-4053-9419-81e4d6737881)
+
 Seaborn:
- 
- 
- 
+![image](https://github.com/user-attachments/assets/6f337798-7c48-475e-922d-26a190c75a2f)
+
+![image](https://github.com/user-attachments/assets/21732aca-2e01-4b79-a3b1-66d37bc315ea)
+
+![image](https://github.com/user-attachments/assets/6adf7b41-18f5-4b77-99eb-d23bec69fd9b)
+
 Plotly:
- 
- 
-  
+![image](https://github.com/user-attachments/assets/c44f01f8-857a-499a-908f-b27ef8409349)
+
+![image](https://github.com/user-attachments/assets/f1186c56-0214-4a84-a34f-91a40872119a)
+
+![image](https://github.com/user-attachments/assets/5767cfae-80f1-474c-9af1-d74ebe187980)
+
+![image](https://github.com/user-attachments/assets/89c501c9-fab4-4d2f-8f22-de449429e41c)
